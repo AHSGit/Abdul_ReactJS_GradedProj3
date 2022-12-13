@@ -1,0 +1,28 @@
+.mb-3 {
+    padding-top: 1em;
+    width: 20em;
+}
+
+/* .search-box {
+    border-radius: 20px;
+} */
+
+/* #button-addon2 {
+    border-radius: 10px;
+} */
+
+.me-auto {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.nav-item {
+    padding: 0.6em;
+    margin: 0.2em;
+}
+
+.nav-item:hover {
+    background-color: #1a1e22;
+    border-radius: 20px;
+}

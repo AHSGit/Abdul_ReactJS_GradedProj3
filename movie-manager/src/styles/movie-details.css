@@ -1,0 +1,105 @@
+.movie__backdrop {
+    width: 100%;
+    object-fit:cover;
+    object-position: 0 35%;
+}
+
+.movie__poster {
+    width:300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+.movie_basics {
+    color: aliceblue;
+    position: absolute;
+    top: 68%;
+    font-weight: 600;
+    font-size: 1rem;
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.movie__name {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.movie__voteCount {
+    margin-left: 0.5rem;
+}
+
+.movie__basicsWrapper > div{
+    padding-bottom: 0.8rem;
+    padding-left: 2.5rem;
+}
+
+.movie__detailsWrapper > div{
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    display: flex;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.actors {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 995px) {
+
+    .movie__cover, .movie__backdrop {
+        display: none;
+    }
+
+    .movie__poster {
+        height: 28rem;
+        position: relative;
+        top: 2rem;
+        left: 0rem;
+        margin: 1rem 0rem 0rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.86) 0px 2px 40px 2px;
+    }
+
+    .movie_basics {
+        padding: 2rem 0rem 0rem 0rem;
+        position: relative;
+        top: 0;
+        margin: 0rem 0rem 0rem 2rem ;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .movie__cover, .movie__backdrop {
+        display: none;
+    }
+
+    .movie__poster {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: 5%;
+        left: 10%;
+        margin: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.86) 0px 2px 40px 2px;
+    }
+
+    .movie_basics {
+        padding-top: 2rem;
+        position: relative;
+        top: 0;
+    }
+
+    .movie_details {
+        padding-top: 2rem;
+    }
+
+}
