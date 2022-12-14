@@ -1,6 +1,5 @@
-import { useState, useEffect, ChangeEvent, Dispatch } from "react";
+import React, { Dispatch, FormEvent } from "react";
 import { Form } from "react-bootstrap";
-import SearchResultsPage from "../pages/search-results";
 
 type SearchProps = {
     searchValue: string
@@ -9,8 +8,12 @@ type SearchProps = {
 
 const SearchBar = ( { searchValue, setSearchValue } : SearchProps ) => {
 
+    const handleSubmit = (event : FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+    }
+
     return (
-        <Form>
+        <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3 search-box" controlId="exampleForm.ControlInput1">
                 <Form.Control
                     type="text"
